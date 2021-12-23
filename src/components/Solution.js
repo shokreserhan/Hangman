@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import Score from './Score'
-import Letter from './Letter'
-import Letters from './Letters'
+import Letter from './Letter';
 
-class Solution extends Component {
+export class Solution extends Component {
     render() {
-        let arr=["-","-","-","-","-"]
-        return (<div>{arr.map(l => <span>{l}</span>)} <div>The best teacher assistant</div></div>)
+        return (
+            <div>
+                {
+                Array.from(this.props.solution.word).map((char ,index) => {
+                    const letter=this.props.letters[char.toUpperCase()] ? char : "_"
+                    return <Letter key={index} letter={letter} class={"solution"}/> 
+                })
+                }
+            </div>
+        )
     }
 }
 export default Solution

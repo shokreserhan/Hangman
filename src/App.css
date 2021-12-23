@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+body{
+  margin-left: 20em;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +38,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.selected{
+  color: red;
+  text-decoration: line-through
+}
+
+.not-selected{
+  color: green;
+}
+
+.not-selected:hover{
+  cursor: pointer;
+  color: yellow;
+  transition-duration: 5ms;
+}
+.medium-score{
+  padding-top: 2em;
+  width: 10em;
+  text-align: center;
+  font-size: 2em;
+  color: #000;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff881a, 0 0 30px #ff881a, 0 0 40px #ff881a, 0 0 55px #ff881a, 0 0 75px #ff881a;
+}
+
+.low-score{
+  padding-top: 2em;
+  width: 10em;
+  text-align: center;
+  font-size: 2em;
+  color: #000;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #ff1818, 0 0 30px #ff1818, 0 0 40px #ff1818, 0 0 55px #ff1818, 0 0 75px #ff1818;
+}
+.high-score{
+  padding-top: 2em;
+  width: 10em;
+  text-align: center;
+  font-size: 2em;
+  color: #000;
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #26af00, 0 0 30px #26af00, 0 0 40px #26af00, 0 0 55px #26af00, 0 0 75px #26af00;
+}
+
+.Solution{
+  text-align: center;
+  border: 1px solid;
+  margin: 5em;
+}
+
+.score{
+  margin-left: 5em;
+}
+.letters{
+  margin-left: 5em;
+}
+
+.game-end{
+  text-align: center;
+  margin: 5em;
 }
